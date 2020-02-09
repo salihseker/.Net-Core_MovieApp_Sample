@@ -14,6 +14,12 @@ namespace NetCore_MovieApp.Controllers
         {
             return View();
         }
+
+        public IActionResult Details(int id)
+        {
+            return View(Repository.GetById(id));
+        }
+        
         
         
     }
