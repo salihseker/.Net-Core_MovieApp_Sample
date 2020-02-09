@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projeler\\NetCore_MovieApp\\NetCore_MovieApp.csproj": {}
+    "d:\\Projeler\\NetCore_MovieApp\\NetCore_MovieApp.csproj": {}
   },
   "projects": {
-    "D:\\Projeler\\NetCore_MovieApp\\NetCore_MovieApp.csproj": {
+    "d:\\Projeler\\NetCore_MovieApp\\NetCore_MovieApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projeler\\NetCore_MovieApp\\NetCore_MovieApp.csproj",
+        "projectUniqueName": "d:\\Projeler\\NetCore_MovieApp\\NetCore_MovieApp.csproj",
         "projectName": "NetCore_MovieApp",
-        "projectPath": "D:\\Projeler\\NetCore_MovieApp\\NetCore_MovieApp.csproj",
+        "projectPath": "d:\\Projeler\\NetCore_MovieApp\\NetCore_MovieApp.csproj",
         "packagesPath": "C:\\Users\\Salih\\.nuget\\packages\\",
-        "outputPath": "D:\\Projeler\\NetCore_MovieApp\\obj\\",
+        "outputPath": "d:\\Projeler\\NetCore_MovieApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
