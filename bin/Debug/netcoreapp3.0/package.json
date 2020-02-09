@@ -1,0 +1,23 @@
+{
+  "name": "NetCore_MovieApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salihseker/.Net-Core_MovieApp_Sample.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salihseker/.Net-Core_MovieApp_Sample/issues"
+  },
+  "homepage": "https://github.com/salihseker/.Net-Core_MovieApp_Sample#readme",
+  "dependencies": {
+    "boostrap": "^2.0.0"
+  }
+}

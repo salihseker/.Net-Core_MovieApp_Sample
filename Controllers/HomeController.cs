@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using NetCore_MovieApp.Models;
 
 namespace NetCore_MovieApp.Controllers
 {
@@ -6,8 +7,7 @@ namespace NetCore_MovieApp.Controllers
     {
         public IActionResult Index()
         {
-
-            return View();
+            return View(Repository.Movies);
         }
 
         public IActionResult Contact()

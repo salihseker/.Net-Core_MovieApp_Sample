@@ -29,10 +29,13 @@ namespace NetCore_MovieApp
                 app.UseDeveloperExceptionPage();
             }
             app.UseStaticFiles();//wwwroot
-            app.UseStaticFiles(new StaticFileOptions{
-                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(),"node_moduls")),
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "node_modules")),
                 RequestPath = "/modules"
             });
+
+            // modules/bootstrap/dist/css/bootstrap.min.css
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
