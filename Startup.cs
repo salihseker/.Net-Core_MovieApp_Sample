@@ -1,11 +1,13 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 
 namespace NetCore_MovieApp
@@ -26,7 +28,11 @@ namespace NetCore_MovieApp
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseStaticFiles();//wwwroot
+            app.UseStaticFiles(new StaticFileOptions{
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(),"node_moduls")),
+                RequestPath = "/modules"
+            });
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
