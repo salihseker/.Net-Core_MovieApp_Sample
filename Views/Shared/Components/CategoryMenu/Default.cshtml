@@ -1,9 +1,12 @@
 @model IEnumerable<Category>
+@* <a asp-controller="Home" asp-action="Index"  asp-route-id="null" class="list-group-item list-group-item-action">Tüm Kategoriler</a> *@
+<a href="/" class="list-group-item list-group-item-action">Tüm Kategoriler</a>
 
 <div class="list-group">
 @foreach (var i in Model)
 {
-    <a href="#" id=@i.Id class="list-group-item list-group-item-action">@i.Name</a>
+    <a asp-controller="Home" asp-action="Index" asp-route-id="@i.Id" id=@i.Id class="list-group-item list-group-item-action 
+                                                                                    @(ViewBag.SelectedCategoryId == i.Id.ToString() ? "active" : "")">@i.Name</a>
 }
 
 </div>
