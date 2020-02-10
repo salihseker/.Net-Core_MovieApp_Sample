@@ -1,12 +1,13 @@
 using System.Collections.Generic;
 using System.Linq;
+using NetCore_MovieApp.Models;
 
-namespace NetCore_MovieApp.Models
+namespace NetCore_MovieApp.Data
 {
-    public static class Repository
+    public static class MovieRepository
     {
         private static List<Movie> _movies = null;
-        static Repository()
+        static MovieRepository()
         {
              _movies = new List<Movie>()
              {
